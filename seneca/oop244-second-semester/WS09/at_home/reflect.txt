@@ -1,0 +1,47 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #9: at_home
+//**************************************************************************************************
+
+1. What happens if you try to put your templated functions in Data.cpp? Does your source code compile 
+if you move all functions to Data.h? Explain.
+
+If the functions are at Data.cpp file the compiler doesn't create the functions properly to swap as 
+necessary to apply the specific type wanted. 
+Yes, the source code does compile properly and template functions are localted at Data.h file. Doing
+this the when the function is called it determines the specialization that the compilers created, then
+binds the call specialization.
+
+
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template 
+function above main(), before it is used, or can you define it below main()?
+
+Moving a templated function into the Main file does not compile. Normally, a function needs to be 
+declared above main() before being definied at the bottom, but int that case didn't work both scnearios. 
+
+
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to 
+accept integer and double arguments? What is the advantage of using templates?
+
+Yes, it could done by using overloading and create two or more functions with the type needed. However, 
+using templated functions we have less code, which is much better having just one function with a 
+generic signature and let the compiler do rest for us. 
+
+
+4. Are the following equivalent? 
+template<class T>
+template<typename T>
+
+Yes, they are. The different is that first one is for class, which make a class generic then it can be used
+for the entire class. 
+The second one is for a single function, which means that only that function is generic. 
+
+
+Quiz #7 - Reflection
+
+5. A reinterpret_cast is typically portable? TRUE
+
+glacy10eng123
+

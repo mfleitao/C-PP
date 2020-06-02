@@ -1,0 +1,51 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #5: at_home
+//**************************************************************************************************
+
+1. The operator+ returns a Fraction object. Explain why this operator should not return a reference 
+to a Fraction object.
+
+For the addition we have used two objects which cannot be changed, so that's why a new object, using
+a specific constructor, must be used to return the result of the addition with from the current object
+and another one. So, in this scneario wouldn't be possible return the reference of the current object, 
+it wouldn't even modified. 
+
+
+2. List the temporary objects in the w5_at_home.cpp main module.
+
+A and C
+
+
+3. List the simplifications that you made to your class to minimize code duplication.
+
+I created a function called "setSafeEmptyState()" which create an object in safe empty state an is used
+in two different places. I also created a function called "sub()" which do the addition or the multiplication
+of a fraction and the current object. This function is used in two different functions to reduce code
+duplication.
+
+
+4. Explain what you have learned in this workshop.
+
+I've learned about the usage of operator overloading and how important is to initialize properly
+objects using safe empty state in non-valid data. I also have learned about code duplication and how
+to optmize code to reduce code and also for reused. And the importance of a unmodified function and
+its differences when we need to set a new object or when we can use the current one. 
+
+
+// **** Quiz #4 Reflection ****
+//--------------------------------------------------------------------------------------------------
+
+4) What is a free helper function (also known as a loosely coupled helper function)?
+
+It's a function which gets all information from a public member function. This member function is
+within a class declared into the "public" scope. It also has no relationship with the class (its 
+declaration and definition). 
+	
+
+
+
+
+

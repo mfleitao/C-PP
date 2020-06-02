@@ -1,0 +1,12 @@
+﻿  CRA_Account.cpp
+c:\matheus\seneca\semester 2\oop244\oop-workshops\ws03\in-lab\cra_account.h(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.15063.0\ucrt\string.h(132): note: consulte a declaração de 'strcpy'
+c:\matheus\seneca\semester 2\oop244\oop-workshops\ws03\in-lab\cra_account.h(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.15063.0\ucrt\string.h(132): note: consulte a declaração de 'strcpy'
+  w3_in_lab.cpp
+c:\matheus\seneca\semester 2\oop244\oop-workshops\ws03\in-lab\cra_account.h(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.15063.0\ucrt\string.h(132): note: consulte a declaração de 'strcpy'
+c:\matheus\seneca\semester 2\oop244\oop-workshops\ws03\in-lab\cra_account.h(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.15063.0\ucrt\string.h(132): note: consulte a declaração de 'strcpy'
+  Gerando Código...
+  in-lab.vcxproj -> C:\Matheus\SENECA\Semester 2\OOP244\OOP-Workshops\WS03\in-lab\Debug\in-lab.exe

@@ -1,0 +1,37 @@
+/**********************************************************
+// Workshop 8 - Smart Pointers
+// 2019/03/26
+// Matheus Fernando Leitao
+// ID: 148 300 171
+// Description: Reflection
+**********************************************************/
+
+• The advantage that smart pointer syntax provides.
+
+According to what I've learned, smart pointers are an advantage in terms of memory leak because
+we can make a mistake and allocate something on memory heap and forget to deallocate that, so
+smart pointers are "smart" to deal with it. 
+
+
+• List the difference between raw and smart pointer syntax in your solution.
+
+In terms of difference we don't need to use the operator(*) for example. We use "unique_ptr<Obj>" instead, 
+which is a templated object.
+With smart pointers we don't need to deal with deallocation of memory.
+
+
+
+*** QUIZ 8 ***
+	
+4. shared state
+
+7. 
+	#include <iostream>
+	#include <thread>
+	
+	void foo() { std::cout << "345\n\n"; }
+	int main() { // this is the master thread
+		std::thread t(foo); // this is a spawned thread
+		foo();
+		t.join();
+	}

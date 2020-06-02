@@ -1,0 +1,39 @@
+244_w1_home_seneGraph.cpp:12:17: error: 'sict' is not a namespace-name
+ using namespace sict;
+                 ^
+244_w1_home_seneGraph.cpp:12:21: error: expected namespace-name before ';' token
+ using namespace sict;
+                     ^
+244_w1_home_seneGraph.cpp: In function 'int main()':
+244_w1_home_seneGraph.cpp:21:18: error: 'menu' was not declared in this scope
+     switch (menu()){
+                  ^
+244_w1_home_seneGraph.cpp:21:18: note: suggested alternative:
+In file included from 244_w1_home_seneGraph.cpp:2:0:
+tools.h:12:6: note:   'sictTools::menu'
+  int menu();
+      ^
+244_w1_home_seneGraph.cpp:24:48: error: 'getInt' was not declared in this scope
+       noOfSamples = getInt(1, MAX_NO_OF_SAMPLES);
+                                                ^
+244_w1_home_seneGraph.cpp:24:48: note: suggested alternative:
+In file included from 244_w1_home_seneGraph.cpp:2:0:
+tools.h:15:6: note:   'sictTools::getInt'
+  int getInt(int, int);
+      ^
+244_w1_home_seneGraph.cpp:32:40: error: 'getSamples' was not declared in this scope
+         getSamples(samples, noOfSamples);
+                                        ^
+244_w1_home_seneGraph.cpp:32:40: note: suggested alternative:
+In file included from 244_w1_home_seneGraph.cpp:3:0:
+graph.h:21:7: note:   'sictGraph::getSamples'
+  void getSamples(int samples[], int);
+       ^
+244_w1_home_seneGraph.cpp:43:40: error: 'printGraph' was not declared in this scope
+         printGraph(samples, noOfSamples);
+                                        ^
+244_w1_home_seneGraph.cpp:43:40: note: suggested alternative:
+In file included from 244_w1_home_seneGraph.cpp:3:0:
+graph.h:15:7: note:   'sictGraph::printGraph'
+  void printGraph(int samples[], int);
+       ^

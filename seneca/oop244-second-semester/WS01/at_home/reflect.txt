@@ -1,0 +1,43 @@
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #1: in_home
+// -------------------------------------------------------------------------------------------------
+
+1. What is a namespace? Explain its purpose.
+
+Namespace is scope which can contains variables, declaration and definition of functions. It's basically
+used to avoid conflicts related to usage of same identifier when more than one developer work at the same 
+project. It means, there's a high probability that a name of a variable or a function can be used twice 
+for different programmers, so it would cause a conflict during the compilation. Using different namespaces
+even with same name of variables or functions whithin those would avoid conflicts. 
+
+
+2. Why are header files needed? Explain. 
+
+They're needed to declare constants, variables and function prototypes. No one supposed to have access
+to the definition of functions, for instance. All of functions should be accessed by the header as a 
+contract and not by including the .cpp file directly, which means that any definition shouldn't be accessed.
+
+
+3. In the instructions above, you were directed to compile only .cpp files but not the .h files. 
+Explain why you should never compile header files. 
+
+We don't need to compile header files, actually. In fact, they're included into definition files, so they 
+aren't seen by the compiler as independent. Because of that, we never compile them.
+
+
+4. Explain why you should never include .cpp files in another file.
+
+When we include a file it tells the preprocessor to copy the file included into the active file, which would 
+take much more time to compile in a big project with so many files. Also, a cpp file is a type of "black box"
+which means that its definition of functions shouldn't be accessed by it, just by the header file. 
+
+
+5. Explain in your own words what have you learned on this workshop.
+
+I've learned how to modularize and organize better the function declarations and their definitions using
+header and cpp files properly. Also, the importance of using "namespace" to avoid conflicts when there are
+more developers working at the same project. Differences between header files and cpp files and which one of 
+these should be included or not and also the importance of header files. 
+

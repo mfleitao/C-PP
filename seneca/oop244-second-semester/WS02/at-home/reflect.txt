@@ -1,0 +1,63 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #2: at_home
+//**************************************************************************************************
+
+1) Why do you need to allocate new dynamic memory when you increase the size of an existing array of 
+dynamically allocated memory?
+
+Because it's not possible to increase the size of an array after it has been declared. For this, it's
+necessary declare a new array with the new size (increased) and then copy the elements of previous
+array to the new one. After that, the original array must be deallocated.
+
+
+2) The Kingdom structure stores the name of the kingdom in an array of characters. At the end of the 
+program, we do not use the delete operator to deallocate the memory occupied by the name. Why don’t 
+we need to use the delete operator on this array itself? Explain.
+
+Once the strucutre variable is deleted using the command "delete", a default destructor is called 
+which also deletes the structure members as well. 
+
+
+3) There are two display(...) function definitions. How does the compiler know which definition to 
+call from your main function?
+
+The compiler knows which function must be called because of the function assignature, which contains
+different parameters. 
+
+
+4) Explain what have you have learned in this workshop.
+
+I have learned about the usage of Overloading of functions. We can have same function with different 
+assignatures and definitions as well. The usage of address and references. And the importance of
+dynamic memory and how to allocate and deallocate it. 
+
+
+
+// **** Quiz #1 Reflection ****
+//--------------------------------------------------------------------------------------------------
+
+1) What is the one definition rule?
+
+Onde definition rule means that a definition must be done just once with same code block.
+
+
+2) The scope of a declaration is the portion of a program over whici that declaration is visible. List
+two (of the five) examples of scopes and explain where contents of the scope are visible.
+
+global scope, which is visible to the whole program;
+file scope, which is visible to the source code within the file;
+function scope, which is visible to the source code within the function;
+class scope, which is visible to the member functions of the class;
+block scope, which is visible to the code block.
+
+
+3) With respect to scope, what is shadowing?
+
+It's a variable declared within a scope which has the same name of a variable declared out of that 
+scope previously. 
+
+
+

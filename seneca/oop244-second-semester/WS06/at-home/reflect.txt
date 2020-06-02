@@ -1,0 +1,37 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #6: at_home
+//**************************************************************************************************
+
+1) Why does the copy assignment operator check for self-assignment before doing anything else?
+
+first compare if the current object is equal to the source passed as parameter. After, do the shallow
+copy. Then, deallocate any memory which was allocated before. Then, allocate a new memory if it's necessary.
+Finally, copy the resource from the the source to the new object. 
+
+
+2) List examples of how you avoided code duplication.
+
+I created functions such as 'validatePhoneNumber()' which is used to validate the phone number and it's used
+in different part. Also, I created functions for any part of the phone number which is also used more than one
+in my code. Functions such as 'countryCode()', areaCode(), firstDigitsNumber(), lastDigitsNumber(). 
+
+3) List what you have learned in completing this workshop.
+
+I have learned more about how to copy a object to another (new, current, etc) and how to validate properly it. 
+Examples such as Copy constructor, assignment operator.
+
+// **** Quiz #5 Reflection ****
+//--------------------------------------------------------------------------------------------------
+
+1. False - shwallow copy involves copying the instance variables and resource data.
+3. True - copy assignment operator copies data from an existing object to an existing object. 
+6. nullptr
+	
+
+
+
+
+

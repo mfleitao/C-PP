@@ -1,0 +1,37 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #3: at_home
+//**************************************************************************************************
+
+1) How many elements are there in each C-style character string that stores a family or given name 
+for the account? Why?
+
+there are 41 elements for each member/array which are 40 declared in a constant plus 1 (one), which
+is for the terminator '\0'.
+
+
+2) Your class declares two member functions named set(...). In C, this would generate an error. 
+Name the feature of C++ that allows this.
+
+Having two "set(...)" functions with different parameters in the same place does not generate an 
+error in C++ because of the object-oriented in it which allows the overloading of a function. 
+
+
+3) What have you learned during this workshop?
+
+I have learned about the usage of privacy and public in a class scope and how to access private 
+members at the definition file. Also, I have learned about the "this" keyword, which is the current
+object. Differences between classes and structs. And finally, learned about "empty state" allows
+a control of what values will be accept to our objet.
+
+
+// **** Quiz #2 Reflection ****
+//--------------------------------------------------------------------------------------------------
+
+1) What is the difference between a class and a struct?
+
+a class is private by default, whereas a struct is public by default.
+
+

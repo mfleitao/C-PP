@@ -1,0 +1,65 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #4: at_home
+//**************************************************************************************************
+
+1) What is a safe empty state? Could you define a safe empty state that differs from the empty state 
+that you defined?	
+
+Safe Empty State is when we use the Constructor to initialize the members to ensure that they will
+be ready to be used properly. The information can be valided before being set. 
+What differs safe empty state to empty state is where they are defined. Safe empty state is defined
+within the constructor initializing the members at the same time of object creatio. whereas empty 
+state is defined in a 'set()' function which must be called after the object creation.
+
+
+2) Identify the parts of your source code where to minimized code duplication.
+
+There are three different constructors which need the same block of code to initialize the "safe empty
+state", so for this it was created a private function that contains the block code which make it. Then
+this private function was used to optmize the constructors.  
+
+
+3) The canTravelWith(...) member function accesses the private data of the object referenced in its 
+parameter. Explain why C++ allows this access.
+
+It's allowed because of the usage of "Passenger::" before the name of the function. It's allows that 
+the funcion access private members of class.
+
+
+4) What statement did you add to ensure that the strncpy(...) function executes correctly?
+
+A const "max_length" which contains the limit number for passager name and destination was added to
+ensure that the function make the copy properly: "strncpy(this->passengerName, name, max_length);"
+
+
+5) Explain what you have learned in this workshop.
+
+I've learned about the usage of constructor and how to overload to have diferente types of initialization.
+Also, learned about safe empty state and its importance and the usage of "this". 
+
+
+// **** Quiz #3 Reflection ****
+//--------------------------------------------------------------------------------------------------
+
+2) Which of the following is false of a destructor?
+
+	B) It must be called explicity
+
+4) True or False, the compiler does not insert an empty-body, no-argument constructor into a class
+definition that declares any form of constructor?
+
+	TRUE
+	
+6) True of False, when an array goes out of scope, the first element calls its destructor first and
+the last element calls its destructor last.
+
+	FALSE
+	
+
+
+
+
+

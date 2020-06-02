@@ -1,0 +1,48 @@
+/**********************************************************
+// Workshop 9 - Multi-Threading
+// 2019/04/02
+// Matheus Fernando Leitao
+// ID: 148 300 171
+// Description: Reflection
+**********************************************************/
+
+• Binary file operations
+
+Using ios_base::binary we read, for example, the data from a file without formatting. There's no
+conversion of data, so the content of a file in that case is unreadable for us. 
+
+
+• Binding a function to its arguments
+
+When the name of a function is passed as a parameter into a function such as std::thread() then
+the parameter of that function are also passed in sequence. Then, when that function is called its
+returns the corresponding function object.
+Example: 
+	void func(int a) {...}
+	int main....
+		int a = 4;
+		std::thread t(func, a);
+
+		
+• Multi-threading
+
+It contains various sequences of programs instructios that are called threads. Each thread 
+works independently to improve the execution time. This feature is related to languages 
+which are Object Oriented. 
+
+
+*** QUIZ 9 ***
+	
+2. #define AA(X) ((X)) * ((X))
+
+   
+5. #if defined(DEBUG_)
+   #endif
+
+6. for (int i = 0; i < n; i++) {
+		delete[] a[i]
+   }
+   delete[] a;
+   
+
+

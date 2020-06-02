@@ -1,0 +1,30 @@
+//**************************************************************************************************
+// Name:			Matheus Leitao	
+// Student Number:	148 300 171
+// Email:			mfleitao@myseneca.ca	
+// Workshop:		Workshop #8: at_home
+//**************************************************************************************************
+
+1. What is the difference between an abstract base class and a concrete class?
+
+An abstract base class has the common attributes and functions that other classes can use. In other
+words, an abstract class is the parent and the concrete class is the actual object that inherents 
+members and functions from the base. 
+
+2. Identify the functions that shadow functions of the same name in your solution?
+
+The functions are: "credit(double)" and "debit(double)" which are used at Account and ChequingAccout class.
+
+
+3. Explain what have you learned in this workshop.
+
+I've learned how to define a pure virtual function (interface) and how to create a abstract base class. It's
+includes how to define the functions of the interface and how to define the derived class and inherents 
+the abstract class. 
+
+
+Quiz #6 - Reflection
+
+1. Pure virtual function: no definition, just signature
+
+5. 4th print out: Student: Harry

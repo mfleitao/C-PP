@@ -1,0 +1,54 @@
+/**********************************************************
+// Workshop 7 - STL Algorithms
+// 2019/03/20
+// Matheus Fernando Leitao
+// ID: 148 300 171
+// Description: Reflection
+**********************************************************/
+
+• The reason for using the vector container rather than any other available in the STL.
+
+The vector was used because it's the most similar container compare to an array. Another point
+is that vectors handle their destruction when a object is out of scope.
+
+
+• List the STL template functions that you used in your solution.
+
+pair<T,T>, accumulate(), for_each(), sort()
+
+
+• Identify where you used lambda expressions.
+
+It was used in the functions below:
+	pair<T, T> sumPair() const;
+	T sigma() const;
+	T slope() const;
+
+
+• Comment on the ease of programming associated with the STL.
+
+Using the containers from the libraries is much easier to deal with data process, adding data or getting data from them
+
+
+
+*** QUIZ 7 ***
+	
+6. 
+	smart pointer has a longer lifetime
+	
+7. 
+	// raw pointer syntax
+	void foo(int x) {
+		Car* car = new Car(x);
+		car->drive();
+		delete car;
+	}
+	
+	// smart pointer syntax
+	void foo(int x) {
+		std::unique_ptr<Car> car = new Car(x);
+		car->drive();
+	}
+	
+8. 
+	std::shared_ptr<type>
